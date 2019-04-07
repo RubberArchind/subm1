@@ -4,7 +4,7 @@ include 'server.php';
 switch ($_REQUEST['a']) {
   case 'add-data':
     // code...
-    $query = $hook->prepare("INSERT INTO [dbo].[user] SET username=?,  password=?");
+    $query = $hook->prepare("INSERT INTO [dbo].[user] (username,password) VALUES username=?,  password=?");
     $run = $query->execute([$_REQUEST['username'],$_REQUEST['password']]);
     if($run){
       echo "success";
