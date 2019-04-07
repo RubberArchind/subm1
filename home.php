@@ -12,9 +12,9 @@
 		</tr>
 			<?php
 			$no=1;
-			$query =mysqli_query($con,"select*from [dbo].[user]");
+			$query =mssql_query($con,"select*from [user]");
 
-			while ($data=mysqli_fetch_array($query)) {
+			while ($data=mssql_fetch_array($query)) {
 				echo "
 				<tr>
 				<td>$no</td>
