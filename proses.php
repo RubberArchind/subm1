@@ -8,7 +8,7 @@ switch ($_REQUEST['a']) {
     $params= array(&$_POST['username'],&$_POST['password']);             
     $stmt = sqlsrv_query($conn,$query,$params);
     if($stmt){
-      echo "success";
+      header("location:http://zerosubone.azurewebsites.net/");
     }else {
       echo "failed";
     }
