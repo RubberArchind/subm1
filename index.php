@@ -17,7 +17,7 @@
       $sql = "SELECT * FROM [dbo].[user] ORDER BY username";
       $stmt = sqlsrv_query($conn, $sql);
  	if($stmt!=false){
-		while($data = sqlsrv_fetch_array($stmt){
+		while($data = sqlsrv_fetch_array($stmt,SQLSRV_FETCH_ASSOC)){
 		echo "
 		something
 		";
