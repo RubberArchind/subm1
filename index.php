@@ -17,6 +17,8 @@
       $stmt = sqlsrv_query($conn, $sql);
  	if($stmt!=false){
 		echo "The php code work";
+	}else{
+		echo"query failed";
 	}
 			 ?>
 
