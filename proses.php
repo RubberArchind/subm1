@@ -4,12 +4,10 @@ include 'server.php';
 switch ($_REQUEST['a']) {
   case 'add-data':
     // code...
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
-    echo $user;
-    echo $pass;
-    $query = mysqli_query($conn,"INSERT INTO [dbo].[user] (username,password) VALUES  ('$user','$pass')");
-    if($query){
+    $query = "INSERT INTO [dbo].[user] (username,password) VALUES  (?,?)";
+    $params= array(&$_POST['username'],&$_POST['password']);             
+    $stmt = sqlsrv_query($conn,$query,$params);
+    if($stmt){
       echo "success";
     }else {
       echo "failed";
