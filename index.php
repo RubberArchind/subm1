@@ -10,7 +10,24 @@
 		<tr>
 			<th>No.</th><th>Username</th><th>Password</th>
 		</tr>
-			
+			<?php
+		include 'server.php';
+			$no=1;
+      $sql = "SELECT * FROM [dbo].[user] ORDER BY username";
+      $stmt = sqlsrv_query($conn, $sql);
+ 	while ($data=sqlsrv_fetch_array($stmt) {
+				echo "
+				<tr>
+				<td>$no</td>
+				<td>".$data['username']."</td>
+				<td>".$data['password']."</td>
+				</tr>
+				";
+
+				$no++;
+			}
+		}
+			 ?>
 
 	</table>
 </div>
