@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="main">
-	<a href="someting.html"><button>Tambah+</button></a>
+	<a href="something.html"><button>Tambah+</button></a>
 	<table border="1">
 		<tr>
 			<th>No.</th><th>Username</th><th>Password</th>
