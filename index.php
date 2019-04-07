@@ -13,7 +13,7 @@
 			<?php
 		include 'server.php';
 			$no=1;
-		echo $conn."\n";
+		
 		echo $no;
 /*		
       $sql = "SELECT * FROM [dbo].[user] ORDER BY username";
