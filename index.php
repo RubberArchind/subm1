@@ -19,7 +19,11 @@
  	if($stmt!=false){
 		while($data = sqlsrv_fetch_array($stmt,SQLSRV_FETCH_ASSOC)){
 		echo "
-		something
+		<tr>
+		<td>".$no."</td>
+		<td>".$data['username']."</td>
+		<td>".$data['password']."</td>
+		</tr>
 		";
 		}
 	}else{
