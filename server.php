@@ -6,4 +6,9 @@ $connectionOptions = array(
     "PWD" => "AlphA21!@"
 );
 $conn = sqlsrv_connect($serverName, $connectionOptions);  
+if($conn){
+    echo"success";
+}else{
+    echo"failed";
+}
 ?>
