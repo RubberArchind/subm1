@@ -1,6 +1,6 @@
 <?php
 try {
-    $conn = new PDO("sqlsrv:server = tcp:dbzero.database.windows.net,1433; Database = submone", "zero", "{your_password_here}");
+    $conn = new PDO("sqlsrv:server = tcp:dbzero.database.windows.net,1433; Database = submone", "zero", "AlphA21!@");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
