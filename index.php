@@ -26,7 +26,7 @@
 
 				$no++;
 			}
-		}
+		echo "The php code work";
 			 ?>
 
 	</table>
