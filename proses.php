@@ -6,7 +6,7 @@ switch ($_REQUEST['a']) {
     // code...
     $user = $_POST['username'];
     $pass = $_POST['password'];
-    $query = mysqli_query($conn,"INSERT INTO [dbo].[user] (username,password) VALUES username=?,  password=?");
+    $query = mysqli_query($conn,"INSERT INTO [dbo].[user] (username,password) VALUES username='$user',  password='$pass'");
     if($query){
       echo "success";
     }else {
