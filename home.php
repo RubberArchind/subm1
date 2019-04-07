@@ -12,9 +12,13 @@
 		</tr>
 			<?php
 			$no=1;
-			$query =sqlsrv_query($conn,"select*from [dbo].[user]");
-
-			while ($data=sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
+      $sql = "SELECT * FROM [dbo].[user] ORDER BY username";
+      $stmt = sqlsrv_query($conn, $sql);
+      if($stmt === false)
+      {
+      die(print_r(sqlsrv_errors(), true));
+      }
+			while ($data=sqlsrv_fetch_array($stmt) {
 				echo "
 				<tr>
 				<td>$no</td>
