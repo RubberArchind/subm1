@@ -15,11 +15,7 @@
 			$no=1;
       $sql = "SELECT * FROM [dbo].[user] ORDER BY username";
       $stmt = sqlsrv_query($conn, $sql);
-      if($stmt === false)
-      {
-      die(print_r(sqlsrv_errors(), true));
-		}else{
-			while ($data=sqlsrv_fetch_array($stmt) {
+ 	while ($data=sqlsrv_fetch_array($stmt) {
 				echo "
 				<tr>
 				<td>$no</td>
