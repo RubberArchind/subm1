@@ -12,9 +12,9 @@
 		</tr>
 			<?php
 			$no=1;
-			$query =mssql_query($con,"select*from [user]");
+			$query =sqlsrv_query($con,"select*from user");
 
-			while ($data=mssql_fetch_array($query)) {
+			while ($data=sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC)) {
 				echo "
 				<tr>
 				<td>$no</td>
