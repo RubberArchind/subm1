@@ -25,6 +25,7 @@
 		<td>".$data['password']."</td>
 		</tr>
 		";
+		$no++;
 		}
 	}else{
 		echo"query failed";
