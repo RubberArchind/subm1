@@ -17,7 +17,14 @@
       $sql = "SELECT * FROM [dbo].[user] ORDER BY username";
       $stmt = sqlsrv_query($conn, $sql);
  	if($stmt!=false){
-		echo "The php code work";
+		while($data = sqlsrv_fetch_array($stmt){
+		echo "
+		<tr>
+		<td>".$no."</td>
+		<td>".$data['username']."</td>
+		<td>".$data['password']."</td>
+		";
+		}
 	}else{
 		echo"query failed";
 	}
