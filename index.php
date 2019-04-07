@@ -17,7 +17,7 @@
       if($stmt === false)
       {
       die(print_r(sqlsrv_errors(), true));
-      }
+		}else{
 			while ($data=sqlsrv_fetch_array($stmt) {
 				echo "
 				<tr>
@@ -28,6 +28,7 @@
 
 				$no++;
 			}
+		}
 			 ?>
 
 	</table>
