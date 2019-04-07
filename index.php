@@ -13,6 +13,9 @@
 			<?php
 		include 'server.php';
 			$no=1;
+		echo $conn;
+		echo $no;
+/*		
       $sql = "SELECT * FROM [dbo].[user] ORDER BY username";
       $stmt = sqlsrv_query($conn, $sql);
  	if($stmt!=false){
@@ -20,6 +23,7 @@
 	}else{
 		echo"query failed";
 	}
+	*/
 			 ?>
 
 	</table>
